@@ -1,0 +1,50 @@
+/* .schedule {
+    height: max-content;
+    
+} */
+
+#announcement {
+    background: white;
+    color: var(--secondary-text);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 1rem 0 1rem;
+}
+
+.close {
+    z-index: 1001;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav .btn {
+    margin-left: 1rem;
+}
+
+/* .schedule {
+    background: url("/assets/chairs.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position-x: center;
+    background-position-y: center;
+} */
+
+#info iframe {
+    margin: 2rem auto;
+    display: block;
+}
+
+.table {
+    width: 80vw;
+    
+}
+
+#map {
+    width: 60vw;
+    padding-bottom: 2rem;
+}
+
+/* @media and screen 992 */

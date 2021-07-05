@@ -1,0 +1,574 @@
+
+/* variables */
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #252525;
+    --tertiary-bg: #141414;
+
+    --primary-text: #000000;
+    --secondary-text: #ffffff;
+}
+
+/* resets */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* base styles */
+body {
+    background: var(--primary-bg);
+    overflow-x: hidden;
+    font-family: 'roboto';
+
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+a {
+    color: var(--primary-text);
+}
+
+h1 {
+    font-family: 'geometos';
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    background: #000000;
+    width: 100vw;
+    height: 5rem;
+    overflow: hidden;
+    z-index: 1000;
+
+}
+
+.navbar-nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    display: none;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.nav-link:hover {
+    background: #ffffff;
+}
+
+.nav-link svg{
+    fill: #ffffff;
+}
+
+.nav-link:hover svg path, .nav-link:hover {
+    fill: #000000;
+}
+
+.nav-text {
+    display: none;
+}
+
+.hero {
+    background: url('images/building.jpg');
+    height: 30rem;
+    background-size: cover;
+    background-repeat: none;
+    background-position-x:right;
+    background-position-y: center;
+}
+
+.get-started {
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 24px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.get-started:hover {
+    transition: 200ms ease-in-out;
+    background: var(--secondary-bg);
+    color: var(--secondary-text);
+}
+
+
+.hero-text {
+    padding-top: 0.2rem;
+    margin-left: 2rem;
+    width: 20rem;
+}
+
+.big-text {
+    color: var(--secondary-text);
+    font-size: 36px;
+    font-family: 'Geometos';
+}
+
+.small-text {
+    color: var(--secondary-text);
+    font-family: 'roboto';
+    font-weight: lighter;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    
+    height: 100%;
+    width: 100%;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.card:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(9/16 * 100%);
+}
+
+.basic-grid {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 1fr;
+
+}
+
+.testimonial {
+    /* display: inline; */
+    background: var(--secondary-bg);
+    color: var(--secondary-text);
+    padding: 2rem 2rem;
+
+}
+
+.testimonial h2 {
+    width: 12rem;
+    justify-content: flex-start;
+}
+
+.testimonial p {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.start-project {
+    height: 1000px;
+}
+
+footer {
+    padding: 1rem;
+    font-size: 14px;
+    background: var(--secondary-bg);
+    color: var(--secondary-text);
+    bottom: 0;
+    /* margin-bottom: 5rem; */
+    
+}
+
+/*about page*/
+/*about page*/
+/*about page*/
+
+.logo-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.about-page {
+    padding: 1rem;
+    width: 90vw;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+
+}
+
+.about-card {
+    line-height: 1.5rem;
+    text-align: justify;
+
+}
+
+
+.about-page h1 {
+    font-family: 'geometos';
+}
+
+/* portfolio page */
+/* portfolio page */
+/* portfolio page */
+
+.portfolio-page {
+    padding: 0 .75rem 2rem;
+}
+
+.portfolio-page .basic-grid {
+    padding: 0;
+}
+
+
+.portfolio-page h1 {
+    font-family: 'geometos';
+
+    /* padding-left: 1rem; */
+}
+
+/* contact page */
+/* contact page */
+/* contact page */
+
+.contact-page {
+    padding: 0 .75rem 2rem;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+.contact-section {
+    padding: 0 .75rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 1px solid var(--secondary-bg);
+    background: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 20px 40px;
+    outline: none;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 6px 2px #5f5f5f;
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    float: right;
+    
+    background: var(--secondary-bg);
+    color: var(--secondary-text);
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 24px;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+}
+
+/* .contact-form-btn:hover {
+    transition: 200ms ease-in-out;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    border: 1px solid var(--secondary-bg);
+    box-shadow: 0 0 4px 1px #5f5f5f;
+    cursor: pointer;
+} */
+
+input:disabled, textarea:disabled {
+    background: rgba(199, 199, 199, 0.6);
+}
+
+#notice {
+    z-index: 1001;
+    position: fixed;
+    right: 40px;
+    
+}
+
+#notice img {
+    height: 200px;
+}
+
+
+
+.socials {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-right: 200px;
+}
+
+
+/* fonts */
+/* regular */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+/* bold */
+@font-face {
+    font-family: 'Roboto';
+    src:url('/assets/fonts/Roboto/Roboto-Black.ttf');
+    font-weight: bold;
+}
+
+/* light */
+@font-face {
+    font-family: 'Roboto';
+    src:url('/assets/fonts/Roboto/Roboto-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Geometos';
+    src: url('/assets/fonts/Geometos.ttf');
+}
+
+/* mobile styles */
+@media screen and (max-width: 350px) {
+
+}
+
+
+@media screen and (max-width: 620px) {
+    body {
+        padding-bottom: 5rem;
+    }
+
+    .contact-section {
+        padding: 0 0;
+    }
+
+}
+
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    body {
+        padding-bottom: 5rem;
+    }
+
+    .hero {
+        background-position-y: center;
+    }
+
+    .hero-text {
+        margin-left: 3rem;
+    }
+
+    .testimonial p {
+        padding-left: 10rem;
+    }
+
+    .about-page {
+        padding: 0 3rem 2rem 3rem;
+    }
+
+    .about-grid {
+        gap: 2rem;
+    }
+    
+}
+
+
+/* large tablets and laptop */
+@media screen and (min-width: 960px){
+
+    body{
+        padding-bottom: 0;
+        padding-top: 5rem;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        background: #ffffff;
+        padding: 1rem;
+        height: 4rem;
+        /* justify-content: right; */
+    }
+
+    .logo {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        /* padding: 1rem; */
+    }
+
+    .nav-item:first-child {
+        margin-left: auto;
+    }
+
+    /* About Page Logo */
+    .logo-image {
+        display: none;
+    }
+
+    .nav-text {
+        display: contents;
+    }
+
+    .navbar svg {
+        display: none;
+    }
+
+    .hero {
+        background-position-y: top;
+    }
+
+    .hero-text {
+        margin-left: 4rem;
+    }
+
+    .big-text {
+        font-size: 54px;
+    }
+
+    .basic-grid {
+        padding: 1.5rem;
+    }
+
+    .testimonial h2 {
+        width: 14rem;
+    }
+
+    .testimonial p {
+        padding-left: 15rem;
+    }
+
+    .about-page {
+        padding: 1rem 4rem 4rem 4rem;
+    }
+
+    .about-grid {
+        gap: 3rem;
+    }
+
+    .portfolio-page h1 {
+        padding: 1rem 4rem 4rem 4rem;
+    }
+
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+
+    body{
+        font-size: 20px;
+        padding-bottom: 0;
+        /* padding-top: 5rem; */
+    }
+
+    .nav-container {
+        top: 0;
+    }
+
+    .hero {
+        background-position-x: left;
+        background-position-y: top;
+        height: 35rem;
+    }
+
+    .hero-text {
+        margin-left: 5rem;
+        width: 30rem;
+    }
+
+    .big-text {
+        font-size: 60px;
+    }
+
+    .basic-grid {
+        padding: 2rem;
+    }
+
+    .portfolio-page h1 {
+        padding-left: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1510px){
+    .basic-grid {
+        padding: 2rem 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+@media screen and (min-width: 1807px){
+    .basic-grid {
+        padding: 2rem 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
+
+
+/* grid testing */
+
+
