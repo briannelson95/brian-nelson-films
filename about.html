@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="stylemobile.css">
     <link rel="icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -75,21 +76,25 @@
         </div>
     </nav>    
 
-    <section class="about-page lazy-load">
+    <section class="about-page">
         <h1>ABOUT</h1>
         <div class="about-grid">
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-right" data-aos-duration="500">
                 <p>Established in 2016, driven by my passion for videography, my experience in film began years before starting my business.</p>
                 <br>
                 <p>At the start, I worked with the Bryant University Men’s and Women’s swim teams to create motivational and promotional videos, featuring members of the team and highlighting their accomplishments. From there, I expanded my skills as Assistant and Lead shooter for a wedding film company. I furthered my qualifications by acquiring a drone pilot license and now offer drone services for any video project.</p>
                 <br>
                 <p>I offer competitive full and half day rates as well as creative add-ons to make your vision come to life in a high quality video. In addition to shooting video, I am highly skilled in using Final Cut Pro X and Motion for all video editing needs. My goal is to work closely with you to tell your story through a creative lens. Visit any of my socials or the Contact page to have your story brought to life.</p>
             </div>
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-left" data-aos-duration="500">
                 <img src="images/me.jpg" alt="Brian Nelson in the woods" height="100%" width="100%">
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <footer style="display: none;">
     ®Brian Nelson 2021

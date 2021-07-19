@@ -94,7 +94,7 @@ h1 {
 
 .hero {
     background: url('images/building.jpg');
-    height: 30rem;
+    height: 80vh;
     background-size: cover;
     background-repeat: none;
     background-position-x:right;
@@ -124,14 +124,15 @@ h1 {
 
 
 .hero-text {
-    padding-top: 0.2rem;
+    padding-top: 2rem;
+    /* padding-top: 0.2rem; */
     margin-left: 2rem;
     width: 20rem;
 }
 
 .big-text {
     color: var(--secondary-text);
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Geometos';
 }
 
@@ -140,6 +141,16 @@ h1 {
     font-family: 'roboto';
     font-weight: lighter;
 
+}
+
+hr {
+    border: 1px solid #000000;
+    max-width: 200px;
+    margin: 0;
+}
+
+.container-2{
+    padding-left: 4%;
 }
 
 .card {
@@ -567,10 +578,11 @@ input:disabled, textarea:disabled {
     .hero {
         background-position-x: left;
         background-position-y: top;
-        height: 35rem;
+        /* height: 35rem; */
     }
 
     .hero-text {
+        padding-top: 2rem;
         margin-left: 5rem;
         width: 30rem;
     }
